@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+}
+
+.leftStaticContainer {
+  flex: 1; /* Left side takes up half of the container */
+  position: fixed; /* try to stop whole page from scrolling */
+  top: 0;
+  bottom: 0;
+  width: 50%; /* Set the width of the left side */
+  background-color: #454545; /* background color - pending redo */
+  z-index: 1; /* Ensure left side stays above the right side */
+}
+
+.rightDynamicContainer {
+  flex: 1; /* Right side takes up the other half of the container */
+  overflow-y: auto; /* Allow scrolling for the right side */
+  height: 100vh; /* Set the height to 100% to fill the container */
+  background-color: #454545; /* Example background color */
+  z-index: 0; /* Ensure right side stays behind the left side */
+}
+
+
+
+
