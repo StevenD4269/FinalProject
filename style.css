@@ -1,33 +1,32 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
+  max-width: 100%;
+}
+.leftStaticContainer {
+  flex: 0 0 50%; /* grow, shrink, width */
+  background-color: #5b5e6d; /* Example background color */
+  padding: 20px; /* Add padding as needed */
+  white-space: nowrap;
+  
 }
 
+.rightDynamicContainer {
+  flex: 0 0 50%;
+  overflow-y: auto; /* Allow scrolling for the right side */
+  background-color: #5b5e6d; /* Example background color */
+  padding: 20px; /* Add padding as needed */
+}
 h1 {
-color: white;
+  color: white;
 }
 h2 {
   font-size: medium;
 }
 
-#leftSummary {
-  font-size: x-large;
-}
 .container {
   display: flex;
   height: 100%;
-}
-
-.leftStaticContainer {
-  flex: 0 0 600px; /* grow, shrink, width */
-  background-color: #5b5e6d; /* Example background color */
-  padding: 20px; /* Add padding as needed */
-}
-
-.rightDynamicContainer {
-  flex: 1; /* Right side takes up remaining space */
-  overflow-y: auto; /* Allow scrolling for the right side */
-  background-color: #5b5e6d; /* Example background color */
-  padding: 20px; /* Add padding as needed */
 }
