@@ -1,23 +1,37 @@
+body {overflow-x: hidden; /* Prevent horizontal scrolling */}
+
 body,
 html {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
-  max-width: 100%;
 }
-.leftStaticContainer {
-  flex: 0 0 50%; /* grow, shrink, width */
-  background-color: #5b5e6d; /* Example background color */
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.leftStaticContainer,
+.rightDynamicContainer {
+  flex: 0 0 50%; /* Each container takes up 50% of the viewport width */
   padding: 20px; /* Add padding as needed */
-  white-space: nowrap;
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  overflow-y: auto; /* Enable vertical scrolling */
+
+}
+
+.leftStaticContainer {
+
+  background-color: #5b5e6d; /* Example background color */
+
   
 }
 
 .rightDynamicContainer {
-  flex: 0 0 50%;
-  overflow-y: auto; /* Allow scrolling for the right side */
+
   background-color: #5b5e6d; /* Example background color */
-  padding: 20px; /* Add padding as needed */
+
 }
 h1 {
   color: white;
