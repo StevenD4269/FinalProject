@@ -1,7 +1,3 @@
-body {
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
 body,
 html {
   height: 100%;
@@ -14,12 +10,12 @@ html {
   height: 100vh;
 }
 
-.leftStaticContainer,
+.leftStaticContainer, /*combined boxes to stop horizontal overflow*/
 .rightDynamicContainer {
   flex: 0 0 50%; /* Each container takes up 50% of the viewport width */
-  padding: 20px; /* Add padding as needed */
-  box-sizing: border-box; /* Include padding and border in the element's total width */
-  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px; 
+  box-sizing: border-box; 
+  overflow-y: auto; /* Enable vertical scrolling, this is because i keep getting overflow */
 }
 
 .leftStaticContainer {
@@ -29,6 +25,11 @@ html {
 .rightDynamicContainer {
   background-color: #5b5e6d; /* Example background color */
 }
+
+.jobOverview {
+  list-style-type: none; /*removes the bullets from my list items*/
+}
+
 h1 {
   color: white;
 }
@@ -36,7 +37,4 @@ h2 {
   font-size: medium;
 }
 
-.container {
-  display: flex;
-  height: 100%;
-}
+
