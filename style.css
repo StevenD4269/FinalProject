@@ -1,4 +1,6 @@
-body {overflow-x: hidden; /* Prevent horizontal scrolling */}
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
 body,
 html {
@@ -18,20 +20,14 @@ html {
   padding: 20px; /* Add padding as needed */
   box-sizing: border-box; /* Include padding and border in the element's total width */
   overflow-y: auto; /* Enable vertical scrolling */
-
 }
 
 .leftStaticContainer {
-
   background-color: #5b5e6d; /* Example background color */
-
-  
 }
 
 .rightDynamicContainer {
-
   background-color: #5b5e6d; /* Example background color */
-
 }
 h1 {
   color: white;
