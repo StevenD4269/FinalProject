@@ -1,10 +1,17 @@
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
 .container {
   display: flex;
 }
 
+
 .leftStaticContainer {
   flex: 1; /* Left side takes up half of the container */
-  position: fixed; /* try to stop whole page from scrolling */
+  position: sticky; /* try to stop whole page from scrolling */
   top: 0;
   bottom: 0;
   width: 50%; /* Set the width of the left side */
